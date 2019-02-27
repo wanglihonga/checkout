@@ -53,11 +53,19 @@ import share from '@/components/mine/share.vue'
 import myCourseList from '@/components/mine/myCourseList.vue'
 import cellList from '@/components/xCell/topImg.vue'
 
+import product from '@/modules/hotProduct/index'
+import money from '@/modules/hotProduct/money'
+import activity from '@/modules/activityNotice/index'
+
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {path: '/login', name: 'login', component: login}, // 登录
+    {path: '/activity', name: 'activity', component: activity}, // 活动通知
+    {path: '/product', name: 'product', component: product }, // 热销产品
+    {path: '/money', name: 'money', component: money }, // 热销产品--现金管理
+
     {path: '/pay', name: 'pay', component: pay}, // 充值
     {path: '/search', name: 'search', component: search}, // 搜索
     {path: '/forgetPassword', name: 'forgetPassword', component: forgetPassword}, // 忘记密码
